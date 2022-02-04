@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function Dog(name, breed, weight) {
+    this.name = name;
+    this.breed = breed;
+    this.weight = weight;
+}
+
+Dog.prototype.species = "Canine";
+Dog.prototype.sitting = false;
+Dog.prototype.sit = function() {
+	if (this.sitting) {
+		console.log(this.name + " is already sitting");
+	} else {
+		console.log(this.name + " is now sitting");
+		this.sitting = true;
+	}
+}
+Dog.prototype.bark = function() {
+	if (this.weight > 25) {
+		console.log(this.name + " says Woof!");
+	} else {
+		console.log(this.name + " says Yip!");
+	}
+};
+Dog.prototype.run = function() {
+    console.log("Run!");
+};
+Dog.prototype.wag = function() {
+    console.log("Wag!");
+};
+
+function ShowDog(name, breed, weight, handler) {
+	this.name = name;
+	this.breed = breed;
+	this.weight = weight;
+	this.handler = handler;
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

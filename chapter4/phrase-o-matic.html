@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Phrase-o-matic</title>
+  <script>
+      function makePrases() {
+        var words1 = ["Антоня", "Коля", "Дима", "Костя", "Антон", "СерыйМ", "СерыйАнг"];
+        var words2 = ["Антоня", "Коля", "Дима", "Костя", "Антон", "СерыйМ", "СерыйАнг"];
+        var words3 = ["process", "solution", "tipping-point", "strategy", "vision"];
+
+        var rand1 = Math.floor(Math.random() * words1.length);
+        var rand2 = Math.floor(Math.random() * words2.length);
+        var rand3 = Math.floor(Math.random() * words3.length);
+
+        var phrase = words1[rand1] + " " + words2[rand2];
+
+        alert(phrase);
+      }
+      makePrases();
+  </script>
+</head>
+<body></body>
+</html>
